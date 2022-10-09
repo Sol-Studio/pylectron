@@ -1,0 +1,8 @@
+<script src="/static/sol-api.js"></script>
+<h1>hi</h1>
+
+<button onclick="output.append('[calc] '+JSON.stringify(solAPI.call_backend_api('calc'))+'\n')">계산기 열기</button>
+<button onclick="output.append('[update_window_title] '+JSON.stringify(solAPI.call_backend_api('update_window_title', {title: '테스트'}))+'\n')">창 제목 바꾸기</button>
+<pre id="output">
+
+</pre>
